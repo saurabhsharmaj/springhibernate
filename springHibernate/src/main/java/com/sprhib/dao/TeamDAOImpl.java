@@ -19,7 +19,7 @@ public class TeamDAOImpl implements TeamDAO {
 		return sessionFactory.getCurrentSession();
 	}
 
-	public void addTeam(Team team) {
+	public void addTeam(Team team) {		
 		getCurrentSession().save(team);
 	}
 
